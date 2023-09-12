@@ -1,0 +1,629 @@
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #ffffff;
+      background-color: white;
+	}
+}
+
+.site-wrapper{
+display: none;
+}
+.flex-container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255,255,255,0.8);
+
+}
+
+.menu{
+  padding: 0 10px;
+  display: flex;
+    align-items: center;
+
+}
+.menu span {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.menu span a {
+  text-decoration: none;
+  color: #0E0E0E;
+}
+.logo{
+  width: 90px;
+  padding: 10px;
+}
+  .container {
+  font-family: arial;
+  font-size: 24px;
+  width: 100%;
+  height: auto;
+
+    margin: 0 25px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+  .contactus .container {
+
+       height: 250px;
+
+  }
+@media only screen and (max-width: 500px) {
+   .about .container {
+
+        height: 100%!important;
+
+   }
+}
+
+  .about .container{
+
+      padding-top: 20px;
+      margin-top: 20px;
+      height: auto;
+      width: 100%;
+      margin-right: 25px;
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
+
+  .container-large{
+    font-family: arial;
+  font-size: 24px;
+  width: 100%;
+  height: auto;
+    margin:calc(100vh - 300px)  0 0 0;
+    background-color: rgba(255,255,255,0.8);
+  }
+
+ @media only screen and (max-width:  767px){
+      .container-large{
+    margin:300px 0 0 0 ;
+  }
+ }
+@media only screen and (max-width: 500px) {
+  .container{
+   width: 100%;
+  height: 100%;
+  }
+
+}
+.child {
+  font-size: 14px;
+}
+.child h3 {
+   margin: 10px 20px;
+    text-align: center;
+}
+.child p {
+  margin: 10px 20px;
+  line-height: 18px;
+}
+@media only screen and  (max-width: 767px) {
+
+.building {
+    background-attachment: scroll!important;
+  background-position: initial;
+  background-size:initial;
+  min-height: 100vh;
+}
+.alterations{
+   background-attachment: scroll!important;
+  background-position: initial;
+  background-size:initial;
+  min-height: 100vh;
+}
+.maintanance {
+    background-attachment: scroll!important;
+  background-position: initial;
+  background-size:initial;
+  min-height: 100vh;
+}
+.valuation{
+    background-attachment: scroll!important;
+  background-position: initial;
+  background-size:initial;
+  min-height: 100vh;
+}
+.plumbing{
+    background-attachment: scroll!important;
+  background-position: initial;
+  background-size:initial;
+  min-height: 100vh;
+}
+.electrician{
+    background-attachment: scroll!important;
+  background-position: initial;
+  background-size:initial;
+  min-height: 100vh;
+}
+.consturction {
+
+  background-attachment: scroll!important;
+  background-position: initial;
+  background-size:initial;
+  min-height: 100vh;
+}
+
+}
+.home{
+  background-image: url('images/BIGLOGO.png');
+  background-attachment: scroll;
+  background-position: top;
+    background-repeat: no-repeat;
+  background-size: auto calc(100vh - 300px);
+  display: flex;
+  align-items: start;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+ @media only screen and  (max-width: 767px) {
+    .home{
+ background-image: url('images/BIGLOGO.png');
+  background-attachment: scroll;
+  background-position: top;
+   background-size: auto 300px;
+  display: flex;
+  align-items: start;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+  }
+
+.about{
+  background-image: url('images/aboutus.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+ @media only screen and  (max-width: 767px) {
+   .about{
+      background-attachment: scroll;
+   }
+ }
+.building{
+  background-image: url('images/home-buiid.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+
+}
+ @media only screen and  (max-width: 767px) {
+   .building{
+      background-attachment: scroll;
+   }
+ }
+.consturction{
+   background-image: url('images/home1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+ @media only screen and  (max-width: 767px) {
+   .consturction{
+      background-attachment: scroll;
+   }
+ }
+.alterations{
+   background-image: url('images/alter.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+ @media only screen and  (max-width: 767px) {
+   .alterations{
+      background-attachment: scroll;
+   }
+ }
+.maintanance{
+   background-image: url('images/maintanance1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+ @media only screen and  (max-width: 767px) {
+   .maintanance{
+      background-attachment: scroll;
+   }
+ }
+.valuation{
+   background-image: url('images/valuation.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+ @media only screen and  (max-width: 767px) {
+   .valuation{
+      background-attachment: scroll;
+   }
+ }
+.plumbing{
+   background-image: url('images/plumbing.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+ @media only screen and  (max-width: 767px) {
+   .plumbing{
+      background-attachment: scroll;
+   }
+ }
+.electrician{
+   background-image: url('images/electrician.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+ @media only screen and  (max-width: 767px) {
+   .electrician{
+      background-attachment: scroll;
+   }
+ }
+.contactus{
+   background-image: url('images/contact.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* dimensions are important, ensure it is tall enough to scroll */
+  min-height: 100vh;
+}
+ @media only screen and  (max-width: 767px) {
+   .contactus{
+      background-attachment: scroll;
+   }
+ }
+.contactus .email{
+    font-family: arial;
+    font-size: 14px;
+    color: #0E0E0E;
+        text-decoration: none;
+  }
+
+/*LOADER*/
+.loader-logo{
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  width: 50px;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 22;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #067111;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  display: flex;
+    align-items: center;
+  margin-top: 10px;
+    margin-right: 25px;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  height: 45px;
+  color: black;
+  padding: 2px 16px 0 14px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+background-color: #047110;
+
+}
+
+  @media (max-width: 700px) {
+    .flex-container {
+           background-color: rgba(255,255,255,0.95);
+    }
+    #desktop-menu{
+    display: none;
+    }
+   .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: transparent;
+
+    }
+    .navbar a {
+      padding: 0;
+    }
+
+  }
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top:65px;
+  background-color: #047110;
+  width: 100%;
+  justify-content: end;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: flex;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+
+
+}
+ @media (min-width: 700px) {
+    .menu {
+      display: none;
+    }
+  }
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 70px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #000000;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 77px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border-bottom: 1px solid #333;
+    height: 1.5em;
+    cursor: pointer;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: black;
+
+     background-color: rgba(255,255,255,0.95);
+
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
